@@ -54,7 +54,7 @@ body {
 .container {
     width: 1280px;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 img {
@@ -178,8 +178,8 @@ img {
     text-align: center;
 
     color: #83888F;
-    background-color: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
-
+    background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+    
 }
 
 .collection__list {
@@ -380,7 +380,7 @@ img {
 }
 
 .works__list {
-
+         width: 1111px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -397,7 +397,8 @@ img {
     padding: 0px;
     margin: 0px;
     width: 300px;
-    margin-right: 85px;
+    text-align: left;
+    margin-right: 95px;
 }
 
 .works__item:nth-child(3n),
