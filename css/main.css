@@ -397,7 +397,7 @@ img {
     padding: 0px;
     margin: 0px;
     width: 300px;
-    margin-right: 95px;
+    margin-right: 85px;
 }
 
 .works__item:nth-child(3n),
@@ -450,10 +450,6 @@ img {
 
 }
 
-.works__link {
-    margin-right: 85px;
-    margin-bottom: 216px;
-}
 
 .footer__container {
     display: flex;
