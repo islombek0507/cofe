@@ -160,13 +160,13 @@ img {
 .intro__content {
     margin: 117px 85px;
     width: 495px;
-
 }
-
 .intro__crate-plan {
     margin-bottom: 132px;
 }
-
+.collection__container{
+    position: relative;
+}
 .collection__name {
     font-family: Fraunces ;
     font-style: normal;
@@ -179,11 +179,19 @@ img {
     margin-top: 136px;
     text-align: center;
     color: #83888F;
-    background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+ /* z-index: 1; */
   
 
 }
-
+.collection__name::before{
+content: "";
+position: absolute;
+width: 1111px;
+height: 196px;
+top: -100px;
+   background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+   
+}
 .collection__list {
     list-style: none;
     display: flex;
@@ -195,6 +203,7 @@ img {
     margin-left: 85px;
     margin-right: 85px;
     margin-top: -20px;
+   
 }
 
 .collection__item {
@@ -202,7 +211,7 @@ img {
     flex-direction: column;
     margin-right: 27px;
     margin-bottom: 25px;
-
+    z-index: 1;
 }
 
 .collection__item:nth-child(4n),
