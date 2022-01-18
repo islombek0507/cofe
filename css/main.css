@@ -129,9 +129,10 @@ img {
 .intro__container {
     background-image: url(../img/intro-img1.jpg);
     width: 1280px;
-    height: 600px;
+    /* height: 600px; */
     background-repeat: no-repeat;
     padding-top: 20px;
+    padding-bottom: 100px;
 
 
 
@@ -663,4 +664,130 @@ color: #333D4B;
 }
 .headquarters__item-item{
     color: #333D4B;
+}
+/* 3-paga */
+.plan-intro__container{
+    background-image: url(../img/introimg3.png);
+    width: 1280px;
+    background-repeat: no-repeat;
+    padding: 100px 85px;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+.works__dark-container{
+    margin-top: 150px;
+    background-color: #2C343E;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    
+}
+.works__item-name-plan{
+    color: #FEFCF7;
+}
+.works__item-discription-plan{
+    color: #FEFCF7;
+}
+.regstratsiya__container{
+    width: 1110px;
+    display: flex;
+   
+
+}
+.regstratsiya__list{
+    list-style: none;
+  
+}
+.regstratsiya__btn{
+    text-align: left;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0px;
+    width: 225px;
+    background-color: #FFFFFF;
+ border: none;
+    font-family: Fraunces;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+color: #83888F;
+border-bottom: 1px solid #83888F;
+}
+.regstratsiya__btn-num{
+    display: inline;
+    margin: 0px;
+    margin-right: 5px;
+
+}
+.regstratsiya__list{
+    padding: 0px;
+    margin: 0px;
+}
+.regstratsiya__item:hover .regstratsiya__btn-num{
+    color: #0E8784;;
+}
+.regstratsiya__item:hover .regstratsiya__btn{
+    color:  #333D4B;
+}
+.regstratsiya__form-btn{
+    font-family: Fraunces;
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+color: #83888F;
+}
+.regstratsiya__form{
+    width: 730px;
+    margin-left: 165px;
+}
+.regstratsiya__form-list{
+    list-style: none;
+    padding: 0px;
+}
+.regstratsiya__form-item:not(:first-child){
+    margin-top: 88px;
+}
+.regstratsiya__form-btn{
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    border: none;
+}
+.radiolar{
+    width: 100%;
+
+}
+.radiolar{
+    display: flex;
+    margin-top: 56px;
+}
+.radiolar__form{
+    background: #F4F1EB;
+
+    margin-right: 23px;
+    border-radius: 8px;
+}
+.radiolar__form:nth-child(3n){
+    margin-right: 0px;
+}
+.radiolar__radio:checked + .radiolar__div{
+    background-color: #0E8784;
+    color: #fff;
+}
+.radiolar__div{
+    width: 228px;
+    padding: 32px 28px 84px;
+    border-radius: 8px;
+  
+}
+.regstratsiya{
+    margin-top: 150px;
 }
