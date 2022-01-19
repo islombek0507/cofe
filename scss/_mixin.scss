@@ -1,0 +1,10 @@
+@mixin flex {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+@mixin bgraund {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
