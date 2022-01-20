@@ -1,0 +1,115 @@
+.works__container {
+    position: relative;
+    padding-bottom: 216px;
+    padding-left: 85px;
+}
+
+
+.works__name {
+    font-family: Fraunces;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+    /* margin-left: 85px; */
+    margin-bottom: 178px;
+}
+
+.works__num {
+    font-family: Fraunces;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    /* identical to box height, or 100% */
+
+    margin: 0px;
+    color: #FDD6BA;
+}
+
+.works__list {
+         width: 1111px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    /* margin-left: 85px; */
+    margin-right: 85px;
+    margin-bottom: 64px;
+}
+
+.works__item {
+    padding: 0px;
+    margin: 0px;
+    width: 300px;
+    text-align: left;
+    margin-right: 95px;
+}
+
+.works__item:nth-child(3n),
+.works__item:last-child {
+    margin-right: 0px;
+}
+
+.works__item-name {
+    font-family: Fraunces;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    /* or 112% */
+
+    width: 255px;
+    margin-top: 38px;
+    margin-bottom: 42px;
+    color: #333D4B;
+}
+
+.works__item-discription {
+    margin: 0px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.works__list::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 790px;
+    background-color: #FDD6BA;
+    height: 1px;
+    top: 150px;
+    left: 95px;
+    border: 2px solid #FDD6BA;
+}
+.works__item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: #FEFCF7;
+    top: 138px;
+    border: 2px solid #0E8784;
+    box-sizing: border-box;
+
+}
+
+.works__dark-container{
+    margin-top: 150px;
+    background-color: #2C343E;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    
+}
+.works__item-name-plan{
+    color: #FEFCF7;
+}
+.works__item-discription-plan{
+    color: #FEFCF7;
+}

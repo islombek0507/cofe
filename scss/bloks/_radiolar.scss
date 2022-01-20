@@ -1,0 +1,28 @@
+
+.radiolar{
+    width: 100%;
+
+}
+.radiolar{
+    display: flex;
+    margin-top: 56px;
+}
+.radiolar__form{
+    background: #F4F1EB;
+
+    margin-right: 23px;
+    border-radius: 8px;
+}
+.radiolar__form:nth-child(3n){
+    margin-right: 0px;
+}
+.radiolar__radio:checked + .radiolar__div{
+    background-color: #0E8784;
+    color: #fff;
+}
+.radiolar__div{
+    width: 228px;
+    padding: 32px 28px 84px;
+    border-radius: 8px;
+  
+}

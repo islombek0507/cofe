@@ -1,0 +1,72 @@
+
+.regstratsiya__container{
+    width: 1110px;
+    display: flex;
+   
+
+}
+.regstratsiya__list{
+    list-style: none;
+  
+}
+.regstratsiya__btn{
+    text-align: left;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0px;
+    width: 225px;
+    background-color: #FFFFFF;
+ border: none;
+    font-family: Fraunces;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+color: #83888F;
+border-bottom: 1px solid #83888F;
+}
+.regstratsiya__btn-num{
+    display: inline;
+    margin: 0px;
+    margin-right: 5px;
+
+}
+.regstratsiya__list{
+    padding: 0px;
+    margin: 0px;
+}
+.regstratsiya__item:hover .regstratsiya__btn-num{
+    color: #0E8784;;
+}
+.regstratsiya__item:hover .regstratsiya__btn{
+    color:  #333D4B;
+}
+.regstratsiya__form-btn{
+    font-family: Fraunces;
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+color: #83888F;
+}
+.regstratsiya__form{
+    width: 730px;
+    margin-left: 165px;
+}
+.regstratsiya__form-list{
+    list-style: none;
+    padding: 0px;
+}
+.regstratsiya__form-item:not(:first-child){
+    margin-top: 88px;
+}
+.regstratsiya__form-btn{
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    border: none;
+}
+
+.regstratsiya{
+    margin-top: 150px;
+}

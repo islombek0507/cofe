@@ -1,0 +1,41 @@
+.intro__title {
+    font-family: Fraunces;
+    padding: 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FEFCF7;
+    width: 493px;
+    margin: 0px;
+}
+
+.intro__discription {
+    line-height: 26px;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    width: 445px;
+    margin-bottom: 56px;
+}
+
+.intro__container {
+    background-image: url(../img/intro-img1.jpg);
+    width: 1280px;
+    /* height: 600px; */
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+
+
+}
+
+
+.intro__content {
+    margin: 117px 85px;
+    width: 495px;
+}
+.intro__crate-plan {
+    margin-bottom: 132px;
+}

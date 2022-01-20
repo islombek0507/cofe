@@ -1,0 +1,33 @@
+
+.commitment__container{
+    margin-top: 168px;
+    padding: 90px 165px 90px 735px;
+    background-image: url(../img/ourimg.jpg);
+    background-repeat: no-repeat;
+    background-position: 85px 0px
+}
+.commitment__title{
+    font-family: Fraunces;
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+/* identical to box height, or 120% */
+margin: 0px;
+
+color: #333D4B;
+}
+.commitment__discription{
+    line-height: 26px;
+/* or 162% */
+margin: 0px;
+margin-top: 32px;
+
+color: #333D4B;
+
+mix-blend-mode: normal;
+opacity: 0.8;
+}
+.commitment__content{
+    width: 541px;
+}

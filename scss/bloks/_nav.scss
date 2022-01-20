@@ -1,0 +1,36 @@
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav__item {
+    margin: 0;
+    padding: 0;
+    margin-left: 32px;
+
+}
+
+.nav__link {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    border: none;
+    color: #83888F;
+}
+
+.nav__link-f:hover {
+    color: #333D4B;
+}
+
+.nav__link-h:hover {
+    color: #FEFCF7;
+}

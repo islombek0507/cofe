@@ -1,0 +1,43 @@
+.quality__container{
+    background-color:  #2C343E;
+    margin-top: 244px;
+    padding-top: 100px;
+    padding-left: 85px;
+    padding-bottom: 150px;
+    position: relative;
+}
+.quality__title{
+    font-family: Fraunces;
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+/* identical to box height, or 120% */
+
+
+color: #FEFCF7;
+}
+.quality__discription{
+    line-height: 26px;
+/* or 162% */
+
+
+color: #FEFCF7;
+
+mix-blend-mode: normal;
+opacity: 0.8;
+}
+.quality__content{
+    width: 541px;
+}
+.quality__content::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 445px;
+    height: 474px;
+    background-image: url(../img/qualityimg.jpg);
+    top: -100px;
+    right: 85px;
+    border-radius: 10px;
+}

@@ -1,0 +1,27 @@
+/* ABOUT */
+.about-intro__container{
+    background-image: url(../img/abou.jpg);
+    width: 1280px;
+    /* height: 450px; */
+    background-repeat: no-repeat;
+    padding: 137px 85px;
+}
+.about-intro__title{
+    font-family: Fraunces ;
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+/* identical to box height, or 120% */
+color: #FEFCF7;
+margin: 0px;
+}
+.about-intro__discription{
+    line-height: 26px;
+/* or 162% */
+width: 445px;
+margin: 0px;
+margin-top: 24px;
+
+color: #FEFCF7;
+}
