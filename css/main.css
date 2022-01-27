@@ -63,8 +63,22 @@ img {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1310px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 1310px) {
+  .container {
+    max-width: 719px;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .container {
+    max-width: 327px;
+  }
 }
 
 .header__logo {
@@ -82,6 +96,10 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 44px 0px;
+}
+
+.header {
+  display: none;
 }
 
 .nav__list {
@@ -147,20 +165,67 @@ img {
 
 .intro__container {
   background-image: url(../img/intro-img1.jpg);
-  width: 1280px;
   /* height: 600px; */
   background-repeat: no-repeat;
   padding-top: 20px;
-  padding-bottom: 100px;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 117px 100px;
 }
 
 .intro__content {
-  margin: 117px 85px;
   width: 495px;
 }
 
 .intro__crate-plan {
   margin-bottom: 132px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .intro__container {
+    background-image: url(../img/introhome@2x.png);
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .intro__container {
+    background-image: url(../img/intro_planshet.png);
+    padding: 104px 73px;
+  }
+  .intro__content {
+    width: 400px;
+  }
+  .intro__title {
+    width: 329px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .intro__discription {
+    width: 398px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .intro__container {
+    background-image: url(../img/intro_phone.jpg);
+    padding: 100px 24px;
+  }
+  .intro__content {
+    width: 280px;
+    text-align: center;
+  }
+  .intro__title {
+    width: 279px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .intro__discription {
+    width: 279px;
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 .crate-plan {
@@ -182,8 +247,13 @@ img {
   border-radius: 6px;
 }
 
+.collection {
+  display: none;
+}
+
 .collection__container {
   position: relative;
+  text-align: center;
 }
 
 .collection__name {
@@ -212,6 +282,7 @@ img {
 }
 
 .collection__list {
+  width: 100%;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,8 +297,6 @@ img {
           align-items: center;
   padding: 0;
   margin: 0px;
-  margin-left: 85px;
-  margin-right: 85px;
   margin-top: -20px;
 }
 
@@ -268,6 +337,10 @@ img {
   width: 255px;
   text-align: center;
   color: #333D4B;
+}
+
+.choose {
+  display: none;
 }
 
 .choose__container {
@@ -387,6 +460,10 @@ img {
   color: #FEFCF7;
   width: 255px;
   margin-left: 47px;
+}
+
+.works {
+  display: none;
 }
 
 .works__container {
@@ -515,6 +592,10 @@ img {
   margin-left: 24px;
 }
 
+.footer {
+  display: none;
+}
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,6 +646,12 @@ img {
   color: #FEFCF7;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .about-intro__container {
+    background-image: url(../img/introabout@2x.png);
+  }
+}
+
 .commitment__container {
   margin-top: 168px;
   padding: 90px 165px 90px 735px;
@@ -596,6 +683,12 @@ img {
 
 .commitment__content {
   width: 541px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .commitment__container {
+    background-image: url(../img/person@2x.png);
+  }
 }
 
 .quality__container {
@@ -639,6 +732,12 @@ img {
   top: -100px;
   right: 85px;
   border-radius: 10px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .quality__content::after {
+    background-image: url(../img/quality@2x.png);
+  }
 }
 
 .headquarters__conrainer {
@@ -728,6 +827,12 @@ img {
   width: 1280px;
   background-repeat: no-repeat;
   padding: 100px 85px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .plan-intro__container {
+    background-image: url(../img/intro3@2x.png);
+  }
 }
 
 .regstratsiya__container {

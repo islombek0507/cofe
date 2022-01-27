@@ -1,5 +1,9 @@
+.collection{
+    display: none;
+}
 .collection__container{
     position: relative;
+    text-align: center;
 }
 .collection__name {
     font-family: Fraunces ;
@@ -27,6 +31,7 @@ top: -100px;
    
 }
 .collection__list {
+    width: 100%;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -34,8 +39,7 @@ top: -100px;
     align-items: center;
     padding: 0;
     margin: 0px;
-    margin-left: 85px;
-    margin-right: 85px;
+   
     margin-top: -20px;
    
 }

@@ -1,5 +1,16 @@
 .container {
-    width: 1280px;
+    max-width: 1310px;
     margin: 0 auto;
-   
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media screen and (max-width:  $planshet) {
+  .container{
+      max-width: 719px;
+  }
+}
+@media screen and (max-width:  $mobile) {
+  .container{
+      max-width: 327px;
+  }
 }
