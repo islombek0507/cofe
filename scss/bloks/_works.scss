@@ -1,6 +1,6 @@
-.works{
-    display: none;
-}
+// .works{
+//     display: none;
+// }
 .works__container {
     position: relative;
     padding-bottom: 216px;
@@ -115,4 +115,104 @@
 }
 .works__item-discription-plan{
     color: #FEFCF7;
+}
+@media screen and (max-width:  $planshet) {
+   
+    .works__name{
+        font-size: 24px;
+line-height: 32px;
+// margin-left: 15px;
+    }
+    .works__list::before{
+        width: 467px;
+        height: 2px;
+        left: 15px;
+    }
+    .works__list{
+        margin: 0px;
+        padding: 0px;
+        width: 688px;
+        margin-right: 10px;
+    }
+    .works__item{
+        width: 223px;
+        margin: 0px;
+        align-items: flex-start;
+
+    }
+    .works__container{
+        padding: 0px;
+    }
+    .works__num{
+        font-size: 72px;
+line-height: 72px;
+    }
+    .works__item-name{
+        font-size: 28px;
+line-height: 32px;
+width: 223px;
+    }
+    .works__item-discription{
+        font-size: 15px;
+line-height: 25px;
+width: 210px;
+margin-bottom: 44px;
+    }
+    .works__item::before {
+        left: 100;
+    }
+    .works__link{
+       width: 217px;
+    }
+    .works__dark-container{
+        margin-top: 150px;
+        background-color: #2C343E;
+        
+        padding-bottom: 100px;
+        
+        
+    }
+}
+@media screen and (max-width:  $mobile) {
+    .works__container{
+     text-align: center;  
+    padding: 24px;
+    }
+    .works__name{
+        margin: 0px;
+        margin-bottom: 80px;
+    }
+    .works__list{
+        flex-direction: column;
+        width: 327px;
+        margin-top: 80px;
+        padding: 0px;
+        margin: 0;
+    }
+    .works__item{
+        width: 100%;
+        margin: 0px;
+        padding: 0;
+        text-align: center;
+        
+    }
+    .works__item::before{
+        display: none;
+    }
+    .works__list::before{
+    display: none;
+    }
+    .works__item-discription{
+    width: 327px;
+  text-align: center;
+    }
+    .works__link{
+        width: 100%;
+        margin-left: 50px;
+    }
+    .works__item-name{
+        width: 100%;
+        
+    }
+    
 }

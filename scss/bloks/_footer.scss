@@ -1,6 +1,6 @@
-.footer{
-    display: none;
-}
+// .footer{
+//     display: none;
+// }
 .footer__container {
     display: flex;
     align-items: center;
@@ -8,7 +8,7 @@
 }
 
 .footer__container {
-
+   
     padding: 48px 0px;
     background-color: #2C343E;
 }
@@ -16,4 +16,34 @@
 
 .footer__nav {
     margin-right: 340px;
+}
+@media screen and (max-width:  $planshet) {
+  .footer__container{
+      flex-direction: column;
+      margin-top: 100px;
+  }
+  .footer__nav{
+      margin: 0;
+      margin-top: 33px;
+      margin-bottom: 65px;
+  }
+}
+@media screen and (max-width:  $mobile) {
+  .nav__list{
+      flex-direction: column;
+  }
+  .nav__item{
+    margin: 0px;
+      margin-bottom: 24px;
+  }
+  .footer__nav{
+    
+      margin-bottom: 39px;
+      text-align: center;
+  }
+  .footer__container{
+text-align: center;
+ 
+  }
+  
 }

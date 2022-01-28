@@ -1,6 +1,6 @@
-.collection{
-    display: none;
-}
+// .collection{
+//     display: none;
+// }
 .collection__container{
     position: relative;
     text-align: center;
@@ -56,7 +56,9 @@ top: -100px;
 .collection__item:last-child {
     margin-right: 0;
 }
-
+.collection__item-content{
+    text-align: center;
+}
 .collection__item-title {
     font-family: Fraunces;
     font-style: normal;
@@ -77,4 +79,59 @@ top: -100px;
     width: 255px;
     text-align: center;
     color: #333D4B;
+}
+@media screen and (max-width:  $planshet) {
+  .collection__name{
+    font-size: 96px;
+    line-height: 72px;
+  }
+    .collection__list{
+      flex-direction: column;
+      margin-top: -40px;
+  }
+.collection__item{
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 47px;
+}
+.collection__item-discripton {
+    width: 282px;
+}
+.collection__item-content{
+    text-align: left;
+}
+.collection__name::before{
+    width: 689px;
+}
+.collection__item-title{
+    text-align: left;
+}
+}
+@media screen and (max-width:  $mobile) {
+  .collection__name{
+    font-size: 40px;
+    line-height: 72px;
+  }
+  .collection__name::before{
+    width: 100%;
+}
+.collection__list{
+    margin-top: 13px;
+}
+.collection__item{
+    flex-direction: column;
+}
+.collection__item-content{
+    text-align: center;
+    width: 100%;
+}
+.collection__item-title{
+    text-align: center;
+    font-size: 24px;
+line-height: 32px;
+}
+.collection__item-discripton {
+    
+    text-align: center;
+}
 }

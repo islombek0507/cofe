@@ -1,6 +1,6 @@
-.choose{
-    display: none;
-}
+// .choose{
+//     display: none;
+// }
 .choose__container {
     text-align: center;
     padding-top: 100px;
@@ -120,4 +120,128 @@
     color: #FEFCF7;
     width: 255px;
     margin-left: 47px;
+}
+@media screen and (max-width:  $planshet) {
+  .choose__container{
+      text-align: center;
+    
+      
+  }
+    .choose__container::before{
+      width: 688px;
+      height: 573px;
+    
+  }
+  .choose__name{
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .choose__discription{
+    font-size: 15px;
+line-height: 25px;
+width: 540px;
+margin-left: 70px;
+
+}
+.choose__list{
+    flex-direction: column;
+    text-align: center;
+    width: 575px;
+    padding: 0;
+    margin: 0px;
+    padding: 57px;
+
+}
+.choose__item{
+    width: 573px;
+    padding: 31px 38px 31px 180px;
+    margin: 0px;
+    margin-bottom: 24px;
+}
+.choose__item--shape {
+   
+    background-position-x:  70px;
+    background-position-y: center;
+
+}
+.choose__item--sovga{
+    background-position-x:  70px;
+    background-position-y: center;
+}
+.choose__item--car{
+    background-position-x:  70px;
+    background-position-y: center;
+}
+.choose__list-title{
+    font-size: 24px;
+line-height: 32px;
+text-align: left;
+margin: 0px;
+}
+.choose__item-discription{
+    font-size: 15px;
+line-height: 25px;
+text-align: left;
+margin-left: 0px;
+width: 314px;
+margin: 0px;
+margin-top: 16px;
+}
+}
+@media screen and (max-width:  $mobile) {
+   .choose__container{
+       text-align: center;
+    //    padding-left: 24px;
+    padding-right: 15px;
+   } 
+    .choose__container::before{
+        width: 327px;
+        height: 902px;
+          
+    }
+    .choose__name{
+        text-align: center;
+        font-size: 28px;
+line-height: 28px;
+
+    }
+    .choose__discription{
+        font-size: 15px;
+line-height: 26px;
+width: 279px;
+text-align: center;
+margin: 20px;
+    }
+
+    .choose__list{
+      flex-direction: column;
+      width: 327px;
+      padding: 0;
+      text-align: center;
+      margin: 0px;
+      
+  }
+  .choose__item{
+    background-position-x: center;
+    background-position-y: 72px;
+    width: 279px;
+    padding: 0px;
+    padding-left: 35px;
+    // padding-right: 35px;
+    padding-top: 200px;
+    text-align: center;
+    padding-bottom: 48px;
+
+  }
+  .choose__list-title{
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .choose__item-discription{
+    font-size: 15px;
+    line-height: 25px;
+    width: 212px;
+    text-align: center;
+  }
 }
