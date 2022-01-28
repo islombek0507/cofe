@@ -1,10 +1,13 @@
-
+// .commitment{
+//     display: none;
+// }
 .commitment__container{
     margin-top: 168px;
     padding: 90px 165px 90px 735px;
     background-image: url(../img/ourimg.jpg);
     background-repeat: no-repeat;
-    background-position: 85px 0px
+    background-position: 85px 0px;
+    
 }
 .commitment__title{
     font-family: Fraunces;
@@ -42,4 +45,44 @@ only screen and (                min-resolution: 2dppx) {
     .commitment__container{
         background-image: url(../img/person@2x.png);
       }
+}
+@media screen and (max-width:  $planshet) {
+  .commitment__container{
+      background-image: url(../img/commitment_planshet.jpg);
+      background-position: left;
+      transform: translateX(15px);
+      padding-left: 350px;
+      
+  }
+  .commitment__content{
+      width: 340px;
+  }
+  .commitment__title{
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .commitment__discription{
+    font-size: 15px;
+    line-height: 25px;
+    width: 339px;
+  }
+}
+@media screen and (max-width:  $mobile) {
+    .commitment__container{
+        background-image: url(../img/commited_mobile.jpg);
+       background-size: contain;
+        border-radius: 10px;
+        background-position: top;
+        padding: 0px;
+        padding-top: 440px;
+        
+    }
+    .commitment__content{
+        width: 327px;
+        text-align: center;
+     
+    }
+    .commitment__discription{
+        width: 327px;
+    }
 }

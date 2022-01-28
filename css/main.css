@@ -878,6 +878,7 @@ img {
 }
 
 .footer__container {
+  padding-left: 15px;
   padding: 48px 0px;
   background-color: #2C343E;
 }
@@ -923,11 +924,15 @@ img {
 
 /* ABOUT */
 .about-intro__container {
-  background-image: url(../img/abou.jpg);
   width: 1280px;
   /* height: 450px; */
-  background-repeat: no-repeat;
+}
+
+.about-intro__img {
+  background-image: url(../img/about_planshet.jpg);
   padding: 137px 85px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about-intro__title {
@@ -953,6 +958,48 @@ img {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .about-intro__container {
     background-image: url(../img/introabout@2x.png);
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .about-intro__img {
+    width: 689px;
+    background-image: url(../img/about_planshet.jpg);
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .about-intro__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .about-intro__discription {
+    font-size: 15px;
+    line-height: 25px;
+    width: 398px;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .about-intro__container {
+    background-size: cover;
+  }
+  .about-intro__img {
+    width: 327px;
+    background-image: url(../img/about_mobile.jpg);
+    background-size: cover;
+    padding: 110px 24px 87px;
+  }
+  .about-intro__title {
+    margin: 0;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .about-intro__discription {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    width: 279px;
   }
 }
 
@@ -995,6 +1042,46 @@ img {
   }
 }
 
+@media screen and (max-width: 1310px) {
+  .commitment__container {
+    background-image: url(../img/commitment_planshet.jpg);
+    background-position: left;
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+    padding-left: 350px;
+  }
+  .commitment__content {
+    width: 340px;
+  }
+  .commitment__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .commitment__discription {
+    font-size: 15px;
+    line-height: 25px;
+    width: 339px;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .commitment__container {
+    background-image: url(../img/commited_mobile.jpg);
+    background-size: contain;
+    border-radius: 10px;
+    background-position: top;
+    padding: 0px;
+    padding-top: 440px;
+  }
+  .commitment__content {
+    width: 327px;
+    text-align: center;
+  }
+  .commitment__discription {
+    width: 327px;
+  }
+}
+
 .quality__container {
   background-color: #2C343E;
   margin-top: 244px;
@@ -1002,6 +1089,7 @@ img {
   padding-left: 85px;
   padding-bottom: 150px;
   position: relative;
+  border-radius: 10px;
 }
 
 .quality__title {
@@ -1012,6 +1100,10 @@ img {
   line-height: 48px;
   /* identical to box height, or 120% */
   color: #FEFCF7;
+}
+
+.headquarters__item-item {
+  margin-bottom: 15px;
 }
 
 .quality__discription {
@@ -1041,6 +1133,52 @@ img {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .quality__content::after {
     background-image: url(../img/quality@2x.png);
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .quality__content::after {
+    width: 573px;
+    height: 320px;
+    background-image: url(../img/quality_planshet.jpg);
+    left: 75px;
+  }
+  .quality__container {
+    padding: 220px 90px 60px;
+    padding-top: 220px;
+    text-align: center;
+  }
+  .quality__content {
+    width: 540px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .quality__container {
+    padding: 100px 22px;
+    border-radius: 10px;
+  }
+  .quality__content::after {
+    top: -70px;
+    width: 279px;
+    height: 156px;
+    background-image: url(../img/quality_planshet.jpg);
+    background-size: contain;
+    left: 23px;
+  }
+  .quality__content {
+    width: 280px;
+    margin: 0px;
+  }
+  .quality__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .quality__discription {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0px;
   }
 }
 
@@ -1123,6 +1261,46 @@ img {
 
 .headquarters__item-item {
   color: #333D4B;
+  color: #333D4B;
+}
+
+@media screen and (max-width: 1310px) {
+  .headquarters__conrainer {
+    padding: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .headquarters__list {
+    width: 680px;
+  }
+  .headquarters__item {
+    margin: 0px;
+    width: 223px;
+  }
+  .headquarters__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .headquarters__conrainer {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .headquarters__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 326px;
+    margin: 0px;
+  }
+  .headquarters__item {
+    text-align: center;
+  }
+  .headquarters__conrainer {
+    text-align: center;
+  }
 }
 
 /* 3-paga */
