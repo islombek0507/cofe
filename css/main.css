@@ -81,8 +81,56 @@ img {
   }
 }
 
+@-webkit-keyframes open {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+            transform: scale(0) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes open {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+            transform: scale(0) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes close {
+  100% {
+    -webkit-transform: scale(0) rotate(45deg);
+            transform: scale(0) rotate(45deg);
+  }
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes close {
+  100% {
+    -webkit-transform: scale(0) rotate(45deg);
+            transform: scale(0) rotate(45deg);
+  }
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .header__logo {
   display: block;
+}
+
+.logo-link {
+  z-index: 4;
 }
 
 .header__container {
@@ -95,11 +143,106 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 44px 0px;
+  padding: 44px 15px;
+  position: relative;
 }
 
-.header {
+.header__btn {
   display: none;
+}
+
+@media screen and (max-width: 719px) {
+  .header__nav {
+    display: none;
+    position: relative;
+  }
+  .header__nav--open {
+    -webkit-animation: nav 3s linear;
+            animation: nav 3s linear;
+  }
+  .header__btn {
+    display: block;
+    width: 16px;
+    height: 13px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    background-color: transparent;
+    z-index: 4;
+  }
+  .header__btn::after,
+  .header__btn::before,
+  .header__btn-span {
+    position: absolute;
+    width: 16px;
+    height: 3px;
+    display: block;
+    background-color: #2C343E;
+    content: "";
+  }
+  .header__btn::after {
+    bottom: 0px;
+  }
+  .header__btn::before {
+    top: 0px;
+  }
+  .header__btn-span {
+    top: 5px;
+  }
+  .header__btn--open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__btn--open .header__btn-span {
+    display: none;
+  }
+  .header__btn--open::before, .header__btn--open::after {
+    top: 50%;
+  }
+  .header__btn--open::after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header__btn--open::before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .header__nav--open {
+    -webkit-animation: open .5s linear;
+            animation: open .5s linear;
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+    display: block;
+    position: absolute;
+    top: 100%;
+    margin-left: -1px;
+    margin-top: -1px;
+    font-size: 24px;
+    width: 101%;
+    z-index: 2;
+  }
+  .header__nav--closing {
+    -webkit-animation: close .3s linear;
+            animation: close .3s linear;
+  }
+  .header__nav--open::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    top: -100%;
+    width: 100%;
+    height: 400%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.704981)), color-stop(55.94%, #FEFCF7));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.704981) 0%, #FEFCF7 55.94%);
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+}
+
+.nav {
+  border: none;
 }
 
 .nav__list {
@@ -142,6 +285,23 @@ img {
   color: #FEFCF7;
 }
 
+@media screen and (max-width: 719px) {
+  .nav__link-f {
+    color: #333D4B;
+    font-family: Fraunces;
+    font-style: normal;
+    font-size: 24px;
+  }
+  .nav__link-f:hover {
+    color: #333D4B;
+    opacity: 0.7;
+  }
+}
+
+.intro {
+  margin-left: 30px;
+}
+
 .intro__title {
   font-family: Fraunces;
   padding: 0;
@@ -170,7 +330,7 @@ img {
   padding-top: 20px;
   background-size: cover;
   border-radius: 10px;
-  padding: 117px 100px;
+  padding: 117px 115px;
 }
 
 .intro__content {
@@ -863,6 +1023,10 @@ img {
 
 .social__link {
   margin-left: 24px;
+}
+
+.footer {
+  display: none;
 }
 
 .footer__container {

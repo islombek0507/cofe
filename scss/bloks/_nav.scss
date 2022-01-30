@@ -1,4 +1,6 @@
-
+.nav{
+    border: none;
+}
 .nav__list {
     margin: 0;
     padding: 0;
@@ -25,6 +27,7 @@
     text-transform: uppercase;
     border: none;
     color: #83888F;
+   
 }
 
 .nav__link-f:hover {
@@ -33,4 +36,18 @@
 
 .nav__link-h:hover {
     color: #FEFCF7;
+}
+@media screen and (max-width:  $mobile) {
+  .nav__link-f{
+      color: #333D4B;
+      font-family: Fraunces;
+font-style: normal;
+font-size: 24px;
+  }
+  .nav__link-f:hover {
+    color: #333D4B;
+    opacity: 0.7;
+}
+
+
 }

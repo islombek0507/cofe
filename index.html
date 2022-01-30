@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cofe</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
  
@@ -15,7 +15,11 @@
         <div class="container header__container">
             <a class="logo-link" href="#"><img class="header__logo" src="img/logo.svg" alt="logo" width="236"
                     height="26"></a>
-            <nav class="nav header__nav">
+                    <button class="header__btn " >
+                        <span class="header__btn-span"></span>
+                        <span class="visually-hidden">open/close nav open</span>
+                    </button>
+            <nav class="nav header__nav ">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="" class="nav__link nav__link-f">HOME</a></li>
                     <li class="nav__item"><a href="http://127.0.0.1:5501/about.html" class="nav__link nav__link-f">ABOUT US</a></li>
@@ -25,7 +29,8 @@
         </div>
     </header>
     <main class="main">
-        <div class="intro">
+        <div class="hero ">
+           <div class="intro ">
             <div class="container intro__container">
                 <div class="intro__content">
                     <p class="intro__title">Great coffee
@@ -37,6 +42,7 @@
 
                 </div>
             </div>
+           </div>
         </div>
         <section class="collection">
             <div class="container collection__container">
@@ -156,6 +162,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
