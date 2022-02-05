@@ -1025,10 +1025,6 @@ img {
   margin-left: 24px;
 }
 
-.footer {
-  display: none;
-}
-
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
